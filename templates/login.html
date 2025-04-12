@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@latest/dist/face-api.min.js"></script>
+<script>
+    Promise.all([
+        faceapi.nets.tinyFaceDetector.loadFromUri('/static/models'), // Or your path to the models
+        faceapi.nets.faceLandmark68Net.loadFromUri('/static/models'),
+        faceapi.nets.faceRecognitionNet.loadFromUri('/static/models'),
+        faceapi.nets.faceExpressionNet.loadFromUri('/static/models')
+    ]).then(startFaceDetection)
+
+    async function startFaceDetection() {
+        // You can initialize your camera and face detection loop here or in your existing script
+        console.log('Face API models loaded');
+    }
+</script>
+<style>
+    .camera-container {
+        position: relative;
+        width: 320px; /* Match video width */
+        /* Remove fixed height to allow button to flow below */
+    }
+
+    #video {
+        width: 320px;
+        height: 240px;
+        display: block; /* Ensure video takes up its own line */
+    }
+
+    #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 240px;
+        z-index: 1; /* Ensure canvas is on top of the video */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login with Face</h1>
+         {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class=flashes>
+                {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <div id="message" class="message"></div>
+
+        <div class="camera-container">
+            <video id="video" width="320" height="240" autoplay playsinline></video>
+            <canvas id="canvas" width="320" height="240"></canvas>
+             <div id="login-feedback" style="margin-top: 10px;"></div>
+            <button type="button" id="login-btn">Login with Face</button>
+        </div>
+        <p><a href="{{ url_for('index') }}">Back to Home</a></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>
