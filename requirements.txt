@@ -124,7 +124,7 @@ tensorflow==2.15.1
 tensorflow-decision-forests==1.8.1
 tensorflow-estimator==2.15.0
 tensorflow-hub==0.16.1
-tensorflow-intel==2.15.1
+tensorflow==2.15.1
 tensorflow-io-gcs-filesystem==0.31.0
 tensorflowjs==4.21.0
 termcolor==2.3.0
