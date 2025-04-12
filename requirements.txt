@@ -17,7 +17,7 @@ contourpy==1.0.7
 cycler==0.11.0
 debugpy==1.6.7
 decorator==5.1.1
-Django==4.2.1
+Django==4.2.1  # Keep if you are using Django, otherwise remove
 dlib==19.24.5
 dnspython==2.7.0
 et-xmlfile==1.1.0
@@ -46,83 +46,74 @@ humanize==4.12.1
 idna==3.4
 image==1.5.33
 importlib_resources==6.5.2
-ipykernel==6.23.0
-ipython==8.13.2
+ipykernel==6.23.0  # Likely for development, consider removing
+ipython==8.13.2    # Likely for development, consider removing
 itsdangerous==2.1.2
 jax==0.4.34
 jaxlib==0.4.34
-jedi==0.18.2
+jedi==0.18.2      # Likely for development, consider removing
 Jinja2==3.1.2
-jupyter_client==8.2.0
-jupyter_core==5.3.0
+jupyter_client==8.2.0  # Likely for development, consider removing
+jupyter_core==5.3.0    # Likely for development, consider removing
 keras==2.15.0
 kiwisolver==1.4.4
 libclang==16.0.6
 Markdown==3.4.4
 markdown-it-py==3.0.0
 MarkupSafe==2.1.3
-matplotlib==3.7.1
-matplotlib-inline==0.1.6
+matplotlib==3.7.1  # Likely for development/analysis, consider removing
+matplotlib-inline==0.1.6 # Likely for development/analysis, consider removing
 mdurl==0.1.2
 ml-dtypes==0.3.2
-MouseInfo==0.1.3
 mpmath==1.3.0
 msgpack==1.1.0
 mysql-connector-python==9.0.0
 mysqlclient==2.2.4
 nest-asyncio==1.5.6
 networkx==3.1
-npm==0.1.1
+npm==0.1.1        # Seems unusual, double-check if needed
 numpy==1.26.4
 oauthlib==3.2.2
 opencv-python==4.8.0.76
 openpyxl==3.1.2
 opt-einsum==3.3.0
 optax==0.2.4
-optional-django==0.1.0
+optional-django==0.1.0 # Keep if you might switch between Flask/Django
 orbax-checkpoint==0.11.5
 packaging==23.1
 pandas==2.0.1
-parso==0.8.3
-pickleshare==0.7.5
+parso==0.8.3      # Likely for development, consider removing
+pickleshare==0.7.5 # Likely for development, consider removing
 pillow==10.2.0
 ping3==4.0.4
 platformdirs==3.5.0
-prompt-toolkit==3.0.38
+prompt-toolkit==3.0.38 # Likely for development, consider removing
 protobuf==4.24.2
 psutil==5.9.5
-pure-eval==0.2.2
-py-cpuinfo==9.0.0
+pure-eval==0.2.2   # Likely for development, consider removing
+py-cpuinfo==9.0.0  # Might be useful for some ML tasks
 pyasn1==0.5.0
 pyasn1-modules==0.3.0
-PyAutoGUI==0.9.53
-PyGetWindow==0.0.9
-Pygments==2.15.1
-pymongo==4.12.0
-PyMsgBox==1.0.9
+Pygments==2.15.1   # Likely for development, consider removing
+pymongo==4.12.0    # Keep if you are using MongoDB
 pyparsing==3.0.9
-pyperclip==1.8.2
-PyRect==0.2.0
-PyScreeze==0.1.28
 python-dateutil==2.8.2
-python-dotenv==1.1.0
-pytweening==1.0.4
+python-dotenv==1.1.0 # Useful for local development with environment variables
 pytz==2023.3
-pywin32==306
 PyYAML==6.0.1
-pyzmq==25.0.2
+pyzmq==25.0.2     # Likely for development, consider removing
 requests==2.31.0
 requests-oauthlib==1.3.1
-rich==13.9.4
+rich==13.9.4       # Likely for development, consider removing
 rsa==4.9
 scipy==1.11.3
-seaborn==0.12.2
+seaborn==0.12.2   # Likely for development/analysis, consider removing
 simplejson==3.20.1
 six==1.16.0
 soupsieve==2.4.1
 SQLAlchemy==2.0.29
 sqlparse==0.4.4
-stack-data==0.6.2
+stack-data==0.6.2 # Likely for development, consider removing
 sympy==1.12
 tensorboard==2.15.2
 tensorboard-data-server==0.7.1
@@ -134,7 +125,7 @@ tensorflow-intel==2.15.1
 tensorflow-io-gcs-filesystem==0.31.0
 tensorflowjs==4.21.0
 tensorstore==0.1.72
-termcolor==2.3.0
+termcolor==2.3.0    # Likely for development, consider removing
 tf_keras==2.15.1
 thop==0.1.1.post2209072238
 toolz==1.0.0
@@ -142,7 +133,7 @@ torch==2.2.2
 torchvision==0.17.2
 tornado==6.3.1
 tqdm==4.66.1
-traitlets==5.9.0
+traitlets==5.9.0   # Likely for development, consider removing
 treescope==0.1.9
 typing_extensions==4.5.0
 tzdata==2023.3
@@ -151,6 +142,6 @@ urllib3==1.26.16
 wcwidth==0.2.6
 Werkzeug==3.0.2
 wrapt==1.14.1
-wurlitzer==3.1.1
+wurlitzer==3.1.1   # Likely for development, consider removing
 xlrd==2.0.1
 zipp==3.21.0
