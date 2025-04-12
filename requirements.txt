@@ -5,7 +5,7 @@ astunparse==1.6.3
 backcall==0.2.0
 beautifulsoup4==4.12.2
 blinker==1.7.0
-bs4==0.0.1
+# bs4==0.0.1  # Replaced with beautifulsoup4
 cachetools==5.3.1
 certifi==2023.7.22
 charset-normalizer==3.2.0
@@ -95,7 +95,7 @@ torch==2.2.2
 torchvision==0.17.2
 tornado==6.3.1
 tqdm==4.66.1
-typing_extensions==4.5.0
+typing_extensions
 tzdata==2023.3
 ultralytics==8.0.194
 urllib3==1.26.16
