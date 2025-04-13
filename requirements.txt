@@ -41,6 +41,7 @@ google-auth-oauthlib==1.0.0
 google-pasta==0.2.0
 greenlet==3.0.3
 grpcio==1.57.0
+gunicorn==23.0.0
 h5py==3.9.0
 humanize==4.12.1
 idna==3.4
@@ -108,7 +109,7 @@ python-dateutil==2.8.2
 python-dotenv==1.1.0
 pytweening==1.0.4
 pytz==2023.3
-pywin32==306; sys_platform == "win32"
+pywin32==306
 PyYAML==6.0.1
 pyzmq==25.0.2
 requests==2.31.0
